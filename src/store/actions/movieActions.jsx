@@ -1,5 +1,5 @@
 import { loadmovie, setLoading, setError } from '../reducers/movieSlice';
-import axios from '../../utils/axios.jsx';
+import axios from '../../utils/Axios.jsx';
 
 export const asyncloadmovie = (id) => async (dispatch) => {
     try {

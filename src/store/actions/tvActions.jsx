@@ -1,5 +1,5 @@
 import { loadtv } from '../reducers/tvSlice.jsx';
-import axios from '../../utils/axios.jsx';
+import axios from '../../utils/Axios.jsx';
 
 export const asyncloadtv = (id) => async (dispatch) => {
     try {
