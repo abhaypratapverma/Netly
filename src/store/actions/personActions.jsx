@@ -1,5 +1,5 @@
 import { loadperson } from '../reducers/personSlice.jsx';
-import axios from '../../utils/axios.jsx';
+import axios from '../../utils/Axios.jsx';
 
 export const asyncloadperson = (id) => async (dispatch) => {
     try {
