@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3em;
+  background: #272720;
+  overflow: hidden;
+  border-radius: 0.25em;
+}
+
+/* Style the select dropdown */
+.select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #272720;
+  color: #fff;
+  flex: 1;
+  padding: 0 0.5em;
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+}
+
+/* Hide default dropdown arrow in IE */
+.select select::-ms-expand {
+  display: none;
+}
+
+/* Custom dropdown arrow */
+.select::after {
+  content: "\25BC"; /* Unicode for down arrow */
+  position: absolute;
+  top: 50%;
+  right: 0.8em;
+  transform: translateY(-50%);
+  color: #fff;
+  pointer-events: none;
+  transition: 0.25s all ease;
+}
+
+/* Hover effect */
+.select:hover::after {
+  color: #6556cd;
+}
+html {
+  scroll-behavior: smooth;
+}
